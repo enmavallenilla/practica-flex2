@@ -1,0 +1,253 @@
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 2.2rem;
+    border-bottom-right-radius: 2.2rem;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/** Card Result **/
+.card__results {
+    width: 100%;
+    min-height: 350px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.card__results__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.card__result__title {
+    color: var(--Grayish-blue);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+
+}
+
+.card__result__container__numbers {
+    background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    padding: 1.6rem 2.5rem;
+    border-radius: 50%;
+}
+
+.card__result__number {
+    font-size: 3.5rem;
+}
+
+.card__result__number2 {
+    text-align: center;
+    color: var(--Grayish-blue);
+}
+
+.card__result__title2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card__result__parrafo {
+    color: var(--Grayish-blue);
+    margin-top: .7rem;
+    width: 80%;
+    text-align: center;
+    font-weight: 500;
+}
+
+/** Card Summary **/
+.card__summary {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card__summary__title {
+    color: rgb(53, 52, 52);
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.card__summary__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding: 1rem 1rem;
+    background-color: hsla(230, 8%, 85%, 0.274);
+    border-radius: 1rem;
+}
+
+.card__summary__icon__text {
+    display: flex;
+    gap: 15px;
+}
+
+.card__summary__observacion1 {
+    color: var(--Light-red);
+    font-weight: 400;
+}
+
+.card__summary__observacion2 {
+    color: var(--Orangey-yellow);
+    font-weight: 400;
+}
+
+.card__summary__observacion3 {
+    color: var(--Green-teal);
+    font-weight: 400;
+}
+
+.card__summary__observacion4 {
+    color: var(--Cobalt-blue);
+    font-weight: 400;
+}
+
+.card__summary__btn {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(3, 75, 231);
+    color: white;
+    font-family: inherit;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 2rem;
+    width: 330px;
+    padding: 1rem;
+    margin-top: 1rem;
+
+
+}
+
+@media(min-width:768px) {
+
+    .card {
+        width: 60%;
+        margin: auto;
+        box-shadow: 0px 6px 7px 0px rgba(0,0,0,0.29);
+        margin-top: 200px;
+        border-top-right-radius: 2.2rem;
+        border-top-left-radius: 2.2rem;
+        border-bottom-left-radius: 2.2rem;
+
+    }
+
+    .card__content {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+
+
+
+    /** Card Result **/
+    .card__results {
+        width: 70%;
+        height: 500px;
+        border-top-right-radius: 2.2rem;
+        border-top-left-radius: 2.2rem;
+        border-bottom-right-radius: 2.2rem;
+        border-bottom-left-radius: 2.2rem;
+
+
+    }
+
+    .card__results__texts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .card__result__title {
+        font-size: 1.5rem;
+        margin: 1.5rem 0 2.5rem 0;
+
+    }
+
+    .card__result__container__numbers {
+        padding: 2rem 3rem;
+
+    }
+
+    .card__result__number {
+        font-size: 4.5rem;
+    }
+
+    .card__result__number2 {
+        font-size: 1.4rem;
+    }
+
+    .card__result__title2 {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .card__result__parrafo {
+        margin-top: .9rem;
+        width: 70%;
+        line-height: 1.5;
+
+    }
+
+
+    /** Card Summary **/
+    .card__summary {
+        width: 60%;
+        border-top-left-radius: 1rem;
+    }
+
+    .card__summary__title {
+        font-size: 1.6rem;
+    }
+
+    .card__summary__container {
+        width: 90%;
+    }
+
+ 
+    .card__summary__btn {
+        margin-top: 1.5rem;
+    }
+    .card__summary__btn:hover{
+        background-color: rgb(77, 73, 73);
+    }
+
+}
+
